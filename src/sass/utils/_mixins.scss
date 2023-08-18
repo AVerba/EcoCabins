@@ -3,3 +3,8 @@
   align-items: center;
   justify-content: center;
 }
+@mixin background-pos($repeat: no-repeat, $position: center, $size: cover) {
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}

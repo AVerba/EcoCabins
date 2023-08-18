@@ -1,8 +1,10 @@
 .header {
   width: 100%;
+  position: fixed;
   padding-top: 39px;
   padding-bottom: 39px;
-  background-color: #333333;
+  background-color: inherit;
+
   &__container{
     display: flex;
     align-items: center;

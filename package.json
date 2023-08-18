@@ -1,0 +1,34 @@
+{
+  "name": "Eco-Cabins",
+  "version": "2.0.0",
+  "description": "",
+  "homepage": "https://AVerba.github.io/EcoCabins/",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /EcoCabins/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AVerba/EcoCabins.git"
+  },
+  "keywords": [],
+  "author": "Oleksii V. <alverba88@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AVerba/EcoCabins/issues"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "handlebars": "^4.7.8",
+    "modern-normalize": "^1.1.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.6.0",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "parcel-transformer-hbs": "^1.0.4",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}

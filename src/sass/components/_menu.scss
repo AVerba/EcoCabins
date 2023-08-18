@@ -3,21 +3,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 143px;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 60px;
+  &__item {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 10px 21.5px;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+
+    &:hover,
+    &:active {
+      border-radius: 4px;
+      background: #FFF;
+      padding: 10px 21.5px;
+      color: #606B74;
+
+      .menu__link {
+        color: #606B74;
+      }
+    }
   }
 
   &__link {
-    color: var(--menu-text-color, #333);
-    font-family: TT Hoves, sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik, sans-serif;
     font-size: 12px;
     font-style: normal;
-    font-weight: 400;
-    line-height: calc(12 / 12); /* 100% */
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
+    font-weight: 500;
+    line-height: calc(12 / 12);
+    text-transform: capitalize;
   }
 }

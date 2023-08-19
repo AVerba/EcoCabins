@@ -4,11 +4,20 @@
 
     </symbol>
 
-  <symbol id="icon-products-link" viewBox="0 0 32 32">
-
+  <symbol id="icon-open-menu" viewBox="0 0 20 14">
+    <g>
+      <path d="M0 1H20" stroke="#D41443" />
+      <path d="M0 7H20" stroke="#D41443" />
+      <path d="M0 13H20" stroke="#D41443" />
+    </g>
   </symbol>
+  <symbol id="icon-close-menu" viewBox="0 0 16 16">
+    <g>
+      <path d="M1.25928 1L14.7408 15" stroke="white" />
+      <path d="M1 14.7407L15 1.25924" stroke="white" />
+    </g>
+  </symbol>
+  <!--  <symbol id="icon-products-link" viewBox="0 0 32 32">-->
 
-<!--  <symbol id="icon-products-link" viewBox="0 0 32 32">-->
-
-<!--  </symbol>-->
+  <!--  </symbol>-->
 </svg>

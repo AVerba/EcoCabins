@@ -1,9 +1,15 @@
 .header {
   width: 100%;
   position: fixed;
-  padding-top: 39px;
-  padding-bottom: 39px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: inherit;
+  @include for-size(tablet) {
+    padding-top: 39px;
+    padding-bottom: 39px;
+
+  }
+
 
   &__container {
     position: relative;

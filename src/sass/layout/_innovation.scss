@@ -1,0 +1,46 @@
+.innovation {
+  background-color: #222F33;
+
+  &__container {
+    padding: 18px 18px;
+    @include for-size(tablet) {
+      padding: 211px 124px 81px 124px;
+
+    }
+
+  }
+
+  &__title {
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Merriweather, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: calc(30 / 30);
+    @include for-size(tablet) {
+      text-align: start;
+    }
+
+  }
+
+  &__content {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: calc(24 / 14); /* 171.429% */
+    opacity: 0.7;
+    margin-top: 15px;
+    @include for-size(tablet) {
+
+      margin-top: 10px;
+      column-count: 2;
+      column-gap: 43px;
+      max-width: 800px;
+      //padding: 20px;
+    }
+  }
+}

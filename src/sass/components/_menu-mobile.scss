@@ -1,73 +1,80 @@
-.menu-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 4;
+.menu-mobile {
   height: 100vh;
   width: 100vw;
-  padding-top: 60px;
-  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
-
-  background-color: tomato;
-
-  @include for-size(tablet) {
-    width: 50vw;
-  }
-  @include for-size(desktop) {
-    display: none;
-  }
-
-
-  transform: translateY(-200%);
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  background-color: rgba(96, 92, 92, 0.9);
+  padding: 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX( 200%);
   transition: transform 300ms ease-in-out;
-
   &.is-open {
     transform: translateY(0);
   }
-}
 
-.menu-close-btn {
-  display: block;
-  width: 14px;
-  height: 14px;
-  background-color: inherit;
-  position: absolute;
-  top: 23px;
-  right: 23px;
-}
+  &__close-btn {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+    width: 30px;
+    height: 32px;
+    background-color: inherit;
 
-.mobile-menu {
-  padding-top: 19px;
-  // .mobile-menu__link
-  li {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid green;
+    .icon-menu {
+      fill: #FFFFFF;
+    }
+
+
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__item {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 10px 21.5px;
+
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+    &:hover,
+    &:active {
+      border-radius: 4px;
+      background: #FFF;
+      padding: 10px 21.5px;
+      color: #606B74;
+
+      .menu__link {
+        color: #606B74;
+      }
+    }
   }
 
   &__link {
-    font-family: DM Sans, sans-serif;
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
     font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: calc(18 / 14);
-    display: flex;
-    align-items: center;
-    padding: 13px 21px;
-
-    color: #fff;
+    font-weight: 500;
+    line-height: calc(24 / 24);
+    text-transform: capitalize;
   }
 
-  //&__link:hover {
-  //  color: var(--accent-color);
-  //}
-  //
-  //&__link:focus {
-  //  outline-color: var(--accent-color);
-  //  color: var(--accent-color);
-  //}
 }
 
-.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
+
+//.is-hidden {
+//  opacity: 0;
+//  pointer-events: none;
+//}

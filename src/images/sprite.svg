@@ -6,9 +6,9 @@
 
   <symbol id="icon-open-menu" viewBox="0 0 20 14">
     <g>
-      <path d="M0 1H20" stroke="#D41443" />
-      <path d="M0 7H20" stroke="#D41443" />
-      <path d="M0 13H20" stroke="#D41443" />
+      <path d="M0 1H20" stroke="white" />
+      <path d="M0 7H20" stroke="white" />
+      <path d="M0 13H20" stroke="white" />
     </g>
   </symbol>
   <symbol id="icon-close-menu" viewBox="0 0 16 16">

@@ -5,13 +5,34 @@
   padding-bottom: 39px;
   background-color: inherit;
 
-  &__container{
+  &__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
   &__menu {
-    margin-left: auto;
+    display: none;
+    @include for-size(tablet) {
+      display: block;
+      margin-left: auto;
+
+    }
+  }
+  &__menu-mobile{
+    display: block;
+    @include for-size(tablet) {
+      display: none;
+    }
+  }
+
+  //mobile-menu btn only
+  &__mobile-menu {
+    background-color: inherit;
+
+    @include for-size(tablet) {
+      display: none;
+    }
   }
 }

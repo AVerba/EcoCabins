@@ -1,29 +1,52 @@
 .intelligence {
-  padding: 89px 0;
+  padding: 40px 0;
+  @include for-size(tablet) {
+    padding: 89px 0;
+  }
 
   &__container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 75px;
+    display: flex; flex-direction: column;
+
+    @include for-size(tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 75px;
+    }
   }
 
   &__image {
     position: relative;
+    margin: 0 auto;
+    @include for-size(tablet) {
+      margin: 0;
+    }
   }
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1 * 60px);
-    margin-top: calc(-1 * 37px);
+    margin-left: calc(-1 * 30px);
+    //margin-top: calc(-1 * 30px);
+    @include for-size(tablet) {
+      margin-left: calc(-1 * 60px);
+      margin-top: calc(-1 * 37px);
+    }
 
   }
 
   &__item {
-    flex-basis: calc(100% / 2 - 60px);
-    margin-left: 60px;
-    margin-top: 37px;
+
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: center;
+    @include for-size(tablet) {
+      flex-basis: calc(100% / 2 - 60px);
+      margin-left: 60px;
+      margin-top: 37px;
+      text-align: start;
+    }
   }
 
   &__item-title {
@@ -37,7 +60,6 @@
   }
 
   &__item-describ {
-    margin-top: 5px;
     color: var(--greys-light-grey, #646D70);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Rubik, sans-serif;
@@ -45,7 +67,16 @@
     font-style: normal;
     font-weight: 400;
     line-height: calc(22 / 12); /* 183.333% */
-    padding-right: 106px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+
+    @include for-size(tablet) {
+      padding-left: 0px;
+      margin-top: 5px;
+      padding-right: 106px;
+    }
+
   }
 }
 
@@ -53,8 +84,12 @@
   display: block;
   max-width: 100%;
   height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+  @include for-size(tablet) {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

@@ -1,0 +1,2 @@
+const e=document.querySelector(".js-open-menu"),t=document.querySelector(".js-close-menu"),n=document.querySelector(".js-menu-container"),a=()=>{const t="true"===e.getAttribute("aria-expanded")||!1;e.setAttribute("aria-expanded",!t),n.classList.toggle("is-open")};e.addEventListener("click",a),t.addEventListener("click",a);const o=document.querySelector(".materials__gallery");new Swiper(o,{speed:500,loop:!0,autoplay:!0,spaceBetween:30,pagination:{el:".materials__pagination"}});
+//# sourceMappingURL=index.9a464af2.js.map
